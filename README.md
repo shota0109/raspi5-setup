@@ -74,16 +74,6 @@ cat ~/.ssh/id_ed25519.pub
 ```
 ## 変更したいところ
 
-## ROS2humbleのイメージを取得
-```bash
-docker pull ros:humble
-```
-
-## Dockerコンテナの起動
-```bash
-docker run -it ros:humble bash
-```
-
 ## リポジトリクローン
 ```bash
 git clone git@github.com:ProjectArgos/raspi5_setup.git
