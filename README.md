@@ -1,6 +1,6 @@
 # Raspberry Pi セットアップ手順書
 
-## 初期セットアップ
+## 基本セットアップツールのインストール
 ```bash
 sudo apt update  
 sudo apt install -y raspi-config openssh-server git
@@ -28,7 +28,7 @@ ssh-keygen -R {IPアドレス}
 ssh {swarmXX}@{IPアドレス}
 ```
 
-## SSH鍵設定
+## GitHubのSSH鍵設定
 ```bash
 ssh-keygen -t ed25519 -C "YOUR-EMAIL"
 cat ~/.ssh/id_ed25519.pub
