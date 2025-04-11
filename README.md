@@ -72,13 +72,29 @@ cat ~/.ssh/id_ed25519.pub
 #出力された公開鍵をGitHubに登録(ssh～から始まる文章)
 #github→右上のアイコン→setting→SSH and GPG keys→New SSH keys
 ```
-## 変更したいところ
+
+## ワークスペースの作成
+```bash
+mkdir argos_ws
+cd argos_ws
+
+#リポジトリのクローン
+
+
+## コンテナの作成
+```bash
+cd argos_ws/docker-setup
+doker login
+docker compose up -d
+```
 
 ## リポジトリクローン
 ```bash
 git clone git@github.com:ProjectArgos/raspi5_setup.git
 cd raspi5_setup
 ```
+
+## 変更したいところ
 
 ## セットアップスクリプト実行
 ```bash
