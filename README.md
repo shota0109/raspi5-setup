@@ -72,6 +72,7 @@ cat ~/.ssh/id_ed25519.pub
 #出力された公開鍵をGitHubに登録(ssh～から始まる文章)
 #github→右上のアイコン→setting→SSH and GPG keys→New SSH keys
 ```
+## 変更したいところ
 
 ## ROS2humbleのイメージを取得
 ```bash
@@ -83,7 +84,6 @@ docker pull ros:humble
 docker run -it ros:humble bash
 ```
 
-## 変更したいところ
 ## リポジトリクローン
 ```bash
 git clone git@github.com:ProjectArgos/raspi5_setup.git
