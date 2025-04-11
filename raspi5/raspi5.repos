@@ -1,0 +1,5 @@
+repositories:
+  raspi5_setup:
+    type: git
+    url: git@github.com:ProjectArgos/raspi5_setup.git
+    version: main  
