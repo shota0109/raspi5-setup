@@ -28,14 +28,6 @@ ssh-keygen -R {IPアドレス}
 ssh {swarmXX}@{IPアドレス}
 ```
 
-## GitHubのSSH鍵設定
-```bash
-ssh-keygen -t ed25519 -C "YOUR-EMAIL"
-cat ~/.ssh/id_ed25519.pub
-#出力された公開鍵をGitHubに登録(ssh～から始まる文章)
-#github→右上のアイコン→setting→SSH and GPG keys→New SSH keys
-```
-
 ## Dockerのaptリポジトリのセットアップ
 ```bash
 sudo apt-get update
@@ -76,8 +68,13 @@ ssh {swarmXX}@{IPアドレス}
 sudo systemctl start docker
 sudo systemctl enable docker
 ```
-<<<<<<< HEAD
-=======
+## GitHubのSSH鍵設定
+```bash
+ssh-keygen -t ed25519 -C "YOUR-EMAIL"
+cat ~/.ssh/id_ed25519.pub
+#出力された公開鍵をGitHubに登録(ssh～から始まる文章)
+#github→右上のアイコン→setting→SSH and GPG keys→New SSH keys
+```
 
 ## ROS2humbleのイメージを取得
 ```bash
@@ -89,20 +86,7 @@ docker pull ros:humble
 docker run -it ros:humble bash
 ```
 
-### ここからはコンテナ内での操作
-## SSHクライアントをインストールする
-```bash
-cd root
-
-apt update
-apt install -y openssh-client
-
-#SSH鍵設定
-ssh-keygen -t ed25519 -C "YOUR-EMAIL"
-cat ~/.ssh/id_ed25519.pub
-#出力された公開鍵をGitHubに登録(ssh～から始まる文章)
-#github→右上のアイコン→setting→SSH and GPG keys→New SSH keys
-```
+## 変更したいところ
 ## リポジトリクローン
 ```bash
 git clone git@github.com:ProjectArgos/raspi5_setup.git
